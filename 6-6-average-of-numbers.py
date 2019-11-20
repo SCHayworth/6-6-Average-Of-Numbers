@@ -22,8 +22,8 @@ def main():
 
     # Read and process each line from the file.
     for line in file_name:
-        # Convert the string to an integer and add it to the sum accumulator
-        value = int(remove_space(line))
+        # Convert the string to a float and add it to the sum accumulator
+        value = float(remove_space(line))
         sum_of_numbers += value
         # Increment the total numbers accumulator.
         total_numbers += 1
