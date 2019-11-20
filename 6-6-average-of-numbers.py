@@ -23,7 +23,7 @@ def main():
     # Read and process each line from the file.
     for line in file_name:
         # Convert the string to an integer and add it to the sum accumulator
-        value = int(line)
+        value = int(remove_space(line))
         sum_of_numbers += value
         # Increment the total numbers accumulator.
         total_numbers += 1
@@ -34,6 +34,12 @@ def main():
     # Calculate and display the average of the values in the file.
     average = sum_of_numbers / total_numbers
     print(average)
+
+
+def remove_space(string):
+    '''Removes extra spaces from a string.
+    '''
+    return string.replace(" ", "")
 
 # Call the main() function
 main()
